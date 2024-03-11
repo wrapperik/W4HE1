@@ -8,6 +8,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo {
+    position: absolute;
+    z-index: 999;
+    filter: invert(1);
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
 .navBar {
     height: 40px;
     text-align: right;
@@ -50,9 +58,8 @@ nav a{
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 20px;
     transition: 1s ease;
+    margin: 20px 10px 0px 10px;
 }
 
 .battlePass:hover {
@@ -91,3 +98,40 @@ nav a{
     border-top-right-radius: 20px;
     backdrop-filter: blur(20px);
 }
+
+.freeBattlePass {
+    display: flex;
+    color: rgb(30, 0, 44);
+}
+
+.fixedLeft {
+  height: 50px;
+    width: 50px;
+    background-image: url(../Assets/images/Battle_Pass_-_Icon_-_Fortnite.webp);
+    background-size: cover;
+    background-position: center;
+    margin-left: 40px;
+}
+
+.centerStretch {
+    background-color: rgb(174, 126, 53);
+    flex-grow: 1;
+   text-align: center;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.fixedRight {
+    height: 50px;
+      width: 50px;
+      background-image: url(../Assets/images/Battle_Pass_-_Icon_-_Fortnite.webp);
+      background-size: cover;
+      background-position: center;
+      margin-right: 40px;
+  }
+
+  @media (max-device-width: 800px)  {
+    .centerStretch{
+        font-size: 12px;
+    }
+  }
